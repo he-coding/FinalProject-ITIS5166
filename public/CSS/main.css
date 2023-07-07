@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+.myHeader {
+    background: #008000
+}
+.specificNav {
+    font-style: oblique;
+    color: #FFFFFF;
+    text-align: right;
+    text-transform: uppercase;
+    padding-top: 7px;
+    margin-top: -9px;
+    margin-right: 23px;
+}
+.generalNav {
+    font-style: oblique;
+    color: #FFFFFF;
+    text-align: left;
+    text-transform: uppercase;
+}
+.mainSection {
+    background-color: #FFFFFF;
+}
+
+.myHeader2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.para {
+    color: #000000;
+    text-align: left;
+    font-style: italic;
+    padding-left: 200px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.myFooter {
+    text-align: right;
+    text-transform: uppercase;
+    position: fixed;
+    background: green;
+    /*position: absolute;*/
+    bottom: 0;
+}
+
+.myFooter a {
+    color: #FFFFFF; /* Change the link text color */
+    margin-left: 10px; /* Add some space between the links */
+    text-decoration: none; /* Remove the underline */
+}
+
+.myFooter a:hover {
+    color: #B2FF59; /* Add a hover effect to the links */
+}
+
+.logo {
+    left: 0px;
+    margin-left: 1px;
+}
+
+.unorderListOne {
+    color: #000000;
+    margin-top: 18px;
+    margin-left: 200px;
+}
+
+.details {
+    text-align: left;
+    text-transform: none;
+    border-left-width: medium;
+    border-right-width: medium;
+    border-top-width: medium;
+    border-left-style: dotted;
+    border-right-style: dotted;
+    border-top-style: dotted;
+    padding-left: 250px;
+    overflow-wrap: break-word;
+    width: 350px;
+}
+.mainForm {
+    margin-left: 250px;
+}
+.mainFormSubmit {
+    margin-top: 18px;
+    margin-left: 300px;
+}

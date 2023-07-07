@@ -1,0 +1,157 @@
+[{
+  "_id": {
+    "$oid": "6456f841d26aa6e650657f5c"
+  },
+  "name": "strawberry",
+  "category": "Fruits",
+  "details": "delicious",
+  "user": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645704e5eb15038489134614"
+  },
+  "name": "Beef Steak",
+  "category": "Meats",
+  "details": "awesome",
+  "user": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645704fceb1503848913461f"
+  },
+  "name": "potato",
+  "category": "Vegetables",
+  "details": "awesome",
+  "user": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "offers": [
+    {
+      "offeredBy": {
+        "$oid": "6456c2055ed451115b3d83b7"
+      },
+      "offeredItem": {
+        "$oid": "645705bdeb15038489134677"
+      },
+      "_id": {
+        "$oid": "645712a4443a7098cbe18652"
+      }
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "6457050deb1503848913462a"
+  },
+  "name": "sweet tea",
+  "category": "Drinks",
+  "details": "awesome",
+  "user": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "offers": [
+    {
+      "offeredBy": {
+        "$oid": "6456c2055ed451115b3d83b7"
+      },
+      "offeredItem": {
+        "$oid": "645705c6eb15038489134682"
+      },
+      "_id": {
+        "$oid": "6457061ceb150384891346f5"
+      }
+    }
+  ],
+  "__v": 1
+},{
+  "_id": {
+    "$oid": "6457051beb15038489134635"
+  },
+  "name": "chips",
+  "category": "Snacks",
+  "details": "awesome",
+  "user": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645705a5eb15038489134661"
+  },
+  "name": "chicken steak",
+  "category": "Meats",
+  "details": "awesome",
+  "user": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645705b2eb1503848913466c"
+  },
+  "name": "grape",
+  "category": "Fruits",
+  "details": "awesome",
+  "user": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645705bdeb15038489134677"
+  },
+  "name": "onion",
+  "category": "Vegetables",
+  "details": "awesome",
+  "user": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645705c6eb15038489134682"
+  },
+  "name": "lemonade",
+  "category": "Drinks",
+  "details": "awesome",
+  "user": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "offers": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "645705e3eb1503848913468d"
+  },
+  "name": "cookies",
+  "category": "Snacks",
+  "details": "awesome",
+  "user": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "offers": [
+    {
+      "offeredBy": {
+        "$oid": "64448299bfc139b565d2d95f"
+      },
+      "offeredItem": {
+        "$oid": "6457051beb15038489134635"
+      },
+      "_id": {
+        "$oid": "64571323443a7098cbe186cc"
+      }
+    }
+  ],
+  "__v": 1
+}]

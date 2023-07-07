@@ -1,0 +1,30 @@
+<%- include('./partials/header.ejs') %>
+<section class="mainSection">
+    <% if (trades.length) { %>
+        <% categories.forEach(category => { %>
+            <div>
+                <h1 class="myHeader2"><%= category %></h1>
+                <ul>
+                    <% trades.forEach(trade => { %>
+                        <% if (trade.category === category) { %>
+                            <li class="unorderListOne">
+                                <a href="/trades/<%= trade._id %>"> <%= trade.name %> </a>
+                                by <%= trade.user ? trade.user.firstName : 'Pre-defined_un-login' %> <%= trade.user ? trade.user.lastName : 'User' %>
+                                <% if (currentUser && trade.user && trade.user._id.toString() !== currentUser._id.toString() && !userWatchlist.includes(trade._id.toString())) { %>
+                                    <form action="/trades/<%= trade._id %>/watchlist/add" method="post"
+                                          style="display: inline;">
+                                        <button type="submit" class="btn btn-sm btn-primary">Add to Watchlist</button>
+                                    </form>
+                                <% } %>
+
+                            </li>
+                        <% } %>
+                    <% }); %>
+                </ul>
+            </div>
+        <% }); %>
+    <% } else { %>
+        <h1 class="myHeader2">No Trades</h1>
+    <% } %>
+</section>
+<%- include('./partials/footer.ejs') %>

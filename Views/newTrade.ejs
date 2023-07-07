@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs')%>
+<section class="mainSection">
+    <form action="/trades" method="post" class="mainForm">
+        <label for="cato">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="enter a name" required minlength="3" maxlength="100"><br><br>
+        <label for="cat">Cat:</label><br>
+        <select class="form-select form-control" name="category" id="category" aria-label="Default select example" required>
+            <option selected disabled>Select a category </option>
+            <option value="Meats">Meats</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Vegetables">Vegetables</option>
+            <option value="Drinks">Drinks</option>
+            <option value="Snacks">Snacks</option>
+        </select><br><br>
+        <label for="details">Detail:</label><br>
+        <input type="text" id="details" name="details" placeholder="enter details" required minlength="3" maxlength="200"><br><br>
+        <input type="submit" class="mainFormSubmit" value="Submit">
+    </form>
+</section>
+<%- include('./partials/footer.ejs')%>

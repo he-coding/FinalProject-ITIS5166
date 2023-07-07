@@ -1,0 +1,36 @@
+// Create a new database called "foodtradesdb"
+use foodtradesdb
+
+// Create a new collection called "trades"
+db.createCollection("trades")
+
+// Insert documents into the "trades" collection
+db.trades.insertMany([
+   {
+    "name": "Beef Steak",
+    "category": "Meats",
+    "details": "Steaks are often made from the cow's back or rib area. Beef steak comes in a wide variety of cuts, with cuts like ribeye, sirloin, and filet mignon offering distinctively diverse textures and flavors. Grilling, pan frying, and broiling are just few of the methods that work well with beef steaks.",
+    "status": "Available",
+   },
+   {
+    "name": "Chicken steak",
+    "category": "Meats",
+    "details": "Grilled or pan-fried chicken breast that has been pounded thin is known as a chicken steak. The meat can be eaten with a wide range of accompaniments, including vegetables, rice, and potatoes, and is seasoned with a wide range of herbs and spices.",
+    "status": "Available",
+    "image": "/images/chickenSteak.jpg"
+   },
+   {
+    "name": "Apple",
+    "category": "Fruits",
+    "details": "Apples are a widely consumed fruit that were originally cultivated in Central Asia but are now also cultivated in many other regions across the world. Shaped like a ball or an oval with a stem protruding from the top, they are available in a rainbow of colors, from red to green to yellow. Apples are beneficial to your health since they include fiber, vitamin C, and antioxidants. They have a high water content that can aid in hydration and have few calories.",
+    "status": "Available",
+    "image": "/images/apple.jpg"
+   }，
+   {
+    "name": "Banana",
+    "category": "Fruits",
+    "details": "Bananas, a type of tropical fruit, are consumed in large quantities all over the world. Although they were originally cultivated in Southeast Asia, many other regions throughout the world, such as Central and South America, Africa, and the Caribbean, have begun to cultivate them. Bananas are long, curved fruits that are covered in a thick, yellow skin that can be easily peeled away to reveal a creamy, sugary interior. They are low in calories and fat and an excellent source of fiber, vitamin C, potassium, and vitamin B6.",
+    "status": "Available",
+    "image": "/images/banana.jpg"
+   }
+])

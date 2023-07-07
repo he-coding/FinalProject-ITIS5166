@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FOOD TRADE INDEX PAGE</title>
+    <link href="/CSS/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header class="myHeader">
+    <nav class="specificNav">
+        <% if (!currentUser) { %> <!-- If there is no current user, show sign up and login -->
+        <a href="/users/signup">Sign Up</a>&nbsp;
+        <a href="/users/login">Login</a>&nbsp;
+        <% } else { %> <!-- If the user is logged in, show create a new trade, profile, and logout -->
+        <a href="/trades/new">Create a New Trade</a>&nbsp;
+        <a href="/users/profile">Profile</a>&nbsp;
+        <a href="/users/logout">Logout</a>&nbsp;
+        Welcome <%= currentUser.firstName %> <%= currentUser.lastName %>
+        <% } %>
+    </nav>
+    <p><a href="/"><img src="/images/food%20logo.jpeg" alt="" width="120" height="80" class="logo">&nbsp</a></p>
+    <nav class="generalNav">
+        <p>&nbsp;<a href="/trades" title="Trades">Trades</a></p>
+    </nav>
+</header>

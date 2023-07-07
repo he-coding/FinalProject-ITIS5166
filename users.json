@@ -1,0 +1,34 @@
+[{
+  "_id": {
+    "$oid": "64448299bfc139b565d2d95f"
+  },
+  "firstName": "Katie",
+  "lastName": "McPherson",
+  "email": "katie@gmail.com",
+  "password": "$2b$10$dh1FvkzpLOupj3agPALiy.gZTI42duX6ogmYdjhQzvj8ST/vwFEiG",
+  "__v": 2,
+  "items": [],
+  "watchlist": [
+    {
+      "$oid": "645705a5eb15038489134661"
+    },
+    {
+      "$oid": "645705e3eb1503848913468d"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "6456c2055ed451115b3d83b7"
+  },
+  "firstName": "He",
+  "lastName": "Zhao",
+  "email": "hezhao@gmail.com",
+  "password": "$2b$10$mE437rTMqk.XOSfMok/IIehngm5a2BKRYJR8RrVj5JON4T0m4eqw2",
+  "items": [],
+  "watchlist": [
+    {
+      "$oid": "6456f841d26aa6e650657f5c"
+    }
+  ],
+  "__v": 1
+}]

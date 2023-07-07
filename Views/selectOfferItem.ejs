@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Offer Item</title>
+</head>
+<body>
+<h1>Select an item to offer for <%= trade.name %></h1>
+<h2>Trade item:</h2>
+<ul>
+    <li>Name: <%= trade.name %></li>
+    <li>Category: <%= trade.category %></li>
+    <li>Details: <%= trade.details %></li>
+    <li>Image: <%= trade.image %></li>
+</ul>
+<h2>Your items:</h2>
+<form action="/trades/<%= trade._id %>/offers" method="post">
+    <ul>
+        <% userItems.forEach(item => { %>
+            <li>
+                <input type="radio" id="<%= item._id %>" name="offeredItemId" value="<%= item._id %>">
+                <label for="<%= item._id %>">
+                    <%= item.name %> - <%= item.category %> - <%= item.details %>
+                    <br>Image: <%= item.image %>
+                </label>
+            </li>
+        <% }); %>
+    </ul>
+    <button type="submit">Submit Offer</button>
+</form>
+</body>
+</html>

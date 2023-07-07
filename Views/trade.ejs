@@ -1,0 +1,20 @@
+<%- include('./partials/header.ejs')%>
+<section class="mainSection">
+    <h1 class="myHeader2"><%=trade.name%></h1>
+    <% if (currentUser && trade.user && trade.user._id.equals(currentUser._id)) { %>
+    <form class="btn-toolbar d-inline">
+        <button type="submit" formmethod="GET" formaction="/trades/<%= trade.id%>/edit">Edit</button>
+        <button type="submit" formmethod="POST" formaction="/trades/<%= trade.id%>?_method=DELETE">Delete</button>
+    </form>
+    <% } %>
+    <% if (currentUser && trade.user && currentUser._id.toString() !== trade.user._id.toString()) { %>
+    <form action="/trades/<%= trade._id %>/select-offer-item" method="get">
+            <button type="submit" class="btn btn-primary">Trade</button>
+        </form>
+    <% } %>
+    <ul class="tropicalFruitsDetailList">
+        <li class="unorderListOne">Details: <%=trade.details %></li>
+        <li class="unorderListOne"> <img src="<%=trade.image %>" alt="" width="250" height="333"/> </li>
+    </ul>
+</section>
+<%- include('./partials/footer.ejs')%>
